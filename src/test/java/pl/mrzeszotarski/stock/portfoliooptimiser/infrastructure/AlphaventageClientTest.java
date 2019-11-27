@@ -37,7 +37,7 @@ public class AlphaventageClientTest {
     public void init(){
         wireMockServer = new WireMockServer(8090);
         wireMockServer.start();
-        wireMockServer.stubFor(get(urlEqualTo("/alphaventagemock/query?function=TIME_SERIES_DAILY&symbol=ABBV&apikey=34JPURA4KAX87RHO"))
+        wireMockServer.stubFor(get(urlEqualTo("/alphaventagemock/query?function=TIME_SERIES_DAILY&symbol=ABBV&apikey=test"))
                 .withHeader("Accept", equalTo("application/json, application/*+json"))
                 .willReturn(aResponse()
                         .withStatus(200)
