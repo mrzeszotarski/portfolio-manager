@@ -1,0 +1,11 @@
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          client:
+            RestTemplate: DEBUG
+
+alphaventage:
+  url: https://www.alphavantage.co/query
+  apikey: test

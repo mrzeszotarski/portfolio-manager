@@ -1,0 +1,11 @@
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          client:
+            RestTemplate: DEBUG
+
+alphaventage:
+  url: http://localhost:8090/alphaventagemock/query
+  apikey: test
